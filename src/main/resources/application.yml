@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: prueba-tecnica
+
+server:
+  port: 9090
