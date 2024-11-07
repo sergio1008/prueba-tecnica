@@ -43,17 +43,17 @@ public class SpaceshipRestController {
         .build()));
   }
 
-  @GetMapping("/name/{name}")
+  @GetMapping("/find-by-name/{name}")
   public ResponseEntity<List<SpaceshipDTO>> findByName(@PathVariable(name = "name") final String name) {
     return ResponseEntity.ok(findByNameSpaceShipUseCase.execute(name));
   }
 
-  @GetMapping("/id/{id}")
+  @GetMapping("/{id}")
   public ResponseEntity<SpaceshipDTO> findById(@PathVariable(name = "id") final Long id) {
     return ResponseEntity.ok(findByIdSpaceshipUseCase.execute(id));
   }
 
-  @DeleteMapping("/id/{id}")
+  @DeleteMapping("/{id}")
   public ResponseEntity<Void> deleteById(@PathVariable(name = "id") final Long id) {
     return ResponseEntity.ok(deleteSpaceshipUseCase.execute(id));
   }
