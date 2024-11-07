@@ -1,4 +1,4 @@
-# API para la gestión de Naves espaciales 
+# API for spaceship management 
 
   This API provides a set of endpoints for CRUD management of Spaceships.
 
