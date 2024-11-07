@@ -7,9 +7,11 @@
 
 
 ## API Documentation
+  After run the application, you can access to the swagger documentation in the following URL:
+  
 - http://localhost:9090/swagger-ui/index.html
 
-## Getting Started
+## Run the application
 
 - mvn clean verify
 - mvn spring-boot:run
